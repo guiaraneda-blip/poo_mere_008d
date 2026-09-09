@@ -1,5 +1,8 @@
 package dev.rampmaster;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Seccion {
     // Atributos
     private String codigo;

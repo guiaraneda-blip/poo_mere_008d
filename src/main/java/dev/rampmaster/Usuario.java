@@ -1,27 +1,46 @@
 package dev.rampmaster;
 
 public abstract class Usuario {
-    protected String nombre;
-    protected String apellido;
+    protected String primerNombre;
+    protected String segundoNombre;
+    protected String primerApellido;
+    protected String segundoApellido;
     protected String correo;
     protected String run;
     protected String fecha_nacimiento;
 
 
-    public String getNombre() {
-        return nombre;
+    public String getPrimerNombre() {
+        return primerNombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setPrimerNombre(String primerNombre) {
+        this.primerNombre = primerNombre;
     }
 
-    public String getApellido() {
-        return apellido;
+
+    public String getSegundoNombre() {
+        return segundoNombre;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setSegundoNombre(String segundoNombre) {
+        this.segundoNombre = segundoNombre;
+    }
+
+    public String getPrimerApellido() {
+        return primerApellido;
+    }
+
+    public void setPrimerApellido(String primerApellido) {
+        this.primerApellido = primerApellido;
+    }
+
+    public String getSegundoApellido() {
+        return segundoApellido;
+    }
+
+    public void setSegundoApellido(String segundoApellido) {
+        this.segundoApellido = segundoApellido;
     }
 
     public String getCorreo() {
@@ -48,9 +67,11 @@ public abstract class Usuario {
         this.fecha_nacimiento = fecha_nacimiento;
     }
 
-    public Usuario(String nombre, String apellido, String correo, String run, String fecha_nacimiento){
-        this.nombre = nombre;
-        this.apellido = apellido;
+    public Usuario(String primerNombre, String segundoNombre, String primerApellido, String segundoApellido, String correo, String run, String fecha_nacimiento){
+        this.primerNombre = primerNombre;
+        this.segundoNombre = segundoNombre;
+        this.primerApellido = primerApellido;
+        this.segundoApellido = segundoApellido;
         this.correo = correo;
         this.run = run;
         this.fecha_nacimiento = fecha_nacimiento;
